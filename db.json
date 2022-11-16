@@ -1,0 +1,23 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "asdasdasd",
+      "email": "asdasdasd",
+      "phone": "123123123",
+      "completed": false,
+      "active": "Inactive",
+      "date": "2022-11-16"
+    },
+    {
+      "name": "qwqweqweqwe",
+      "email": "asdasdasd@gmail.com",
+      "phone": "123123",
+      "active": "Active",
+      "completed": false,
+      "isdeleted": false,
+      "date": "2022-11-17",
+      "id": 2
+    }
+  ]
+}

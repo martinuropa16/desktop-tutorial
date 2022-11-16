@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import List from "./componentes/List";
+import Create from "./componentes/Create";
+import Detail from "./componentes/Detail";
+import Edit from "./componentes/Edit";
+import Archieve from "./componentes/Archieve";
+import Navbar from "./componentes/Navbar";
 
 function App() {
+  /*  const [completed, completedchange] = useState(false);
+  const [empdata, empdatachange] = useState(); */
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <br></br>
+      {/* <h1>React JS Todolist Assessment</h1> */}
+
+      <Routes>
+        <Route
+          path="/"
+          element={<List title={"React JS Todolist Assessment"} />}
+        ></Route>
+        <Route path="/list/create" element={<Create />}></Route>
+        <Route path="/list/archieve" element={<Archieve />}></Route>
+        <Route path="/list/detail/:empid" element={<Detail />}></Route>
+        <Route path="/list/edit/:empid" element={<Edit />}></Route>
+      </Routes>
     </div>
   );
 }

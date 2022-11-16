@@ -7,6 +7,23 @@
   pointer-events: none;
 }
 
+.btn {
+  margin: 2px;
+}
+
+.space {
+  margin: 10px 0px 10px 0px;
+}
+
+.crossed-line {
+  text-decoration: line-through;
+}
+.status {
+  margin-left: 100px;
+}
+.divbtn {
+  float: left;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
